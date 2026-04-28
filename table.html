@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="light" rel="stylesheet" href="style1.css">
+    <link id="dark" rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <title>Table Reservation</title>
+    <style>
+    h1{
+            text-align: center;
+        }
+        textarea{
+            width: 50%;
+            padding: 10px;
+            margin:8px 0;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body class="bg-img">
+<header>
+      <nav>
+        <img src="logo.png" alt="" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="deserts.html">Deserts</a></li>
+          <li><a href="drinks.html">Drinks</a></li>
+          <li><a href="offers.html">Special Offers</a></li>
+          <li><a href="table.html">Table Reservation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <button class="theme-toggle" type="button" id="themeBtn" >☀️</button>
+          <button><a href="menu.html" class="btn">ORDER NOW</a></button>
+        </div>
+      </nav>
+    </header>
+      
+<div class="Table">
+<h1>Book a Table</h1>
+
+<form>
+    <input type="text" placeholder="Full Name" required>
+    <br>
+    <input type="tel" placeholder="Phone Number" required>
+    <br>
+    <input type="date" required>
+    <br>
+    <input type="time" required>
+    <br>
+    <select required>
+    <option value="">Number of Guests</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5+</option>
+    </select>
+    <br>
+    <textarea placeholder="Notes (optional)"></textarea>
+    <br>
+    <button type="submit">Reserve Now</button>
+</form>
+</div>
+    <footer>
+    <div class="logo">Food Station</div>
+    <span>© 2026 Food Station. All rights reserved.</span>
+    <span>Cairo, Egypt</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
