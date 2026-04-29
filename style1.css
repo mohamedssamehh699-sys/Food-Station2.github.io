@@ -1233,8 +1233,7 @@ header nav > div{
 
 /* Menu Section */
 #menu {
-  padding: 6rem 4rem;
-  background: linear-gradient(180deg, #0d0d0d, #130f00);
+  background: transparent;
 }
 .menu-grid {
   display: grid;
