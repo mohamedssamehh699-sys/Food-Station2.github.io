@@ -16,8 +16,8 @@
         cursor: pointer;
       }
     </style>
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style1.css" id="light" />
+    <link rel="stylesheet" href="style2.css" id="dark" />
 </head>
 <body class="bg-img">
    <header>
@@ -34,7 +34,7 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div style="display:flex;align-items:center;gap:1rem;">
-          <button class="theme-toggle" type="button" id="themeBtn" >☀️</button>
+        <button class="theme-toggle" type="button" id="themeBtn" onclick="toggleTheme()" >☀️</button>
           <button><a href="menu.html" class="btn">ORDER NOW</a></button>
         </div>
       </nav>
