@@ -1383,7 +1383,9 @@ footer span {
 .bg-img{
     background-image: url(img/dark-gray-wooden-textured-flooring-background.jpg);
 }
-
+.ab{
+    border: 0;
+}
 
 
 
