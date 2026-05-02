@@ -5,11 +5,27 @@ function toggleTheme() {
     if (dark.disabled) {
         dark.disabled = false;
         light.disabled = true;
+        localStorage.setItem("theme", "dark");
+    } else {
+        dark.disabled = true;
+        light.disabled = false;
+        localStorage.setItem("theme", "light");
+    }
+}
+window.onload = function() {
+    let savedTheme = localStorage.getItem("theme");
+    let light = document.getElementById("light");
+    let dark = document.getElementById("dark");
+
+    if (savedTheme === "dark") {
+        dark.disabled = false;
+        light.disabled = true;
     } else {
         dark.disabled = true;
         light.disabled = false;
     }
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     const resForm = document.querySelector('form');
     if (resForm) {
